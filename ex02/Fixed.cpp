@@ -6,7 +6,7 @@
 /*   By: ldesboui <ldesboui@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/06 14:00:04 by ldesboui          #+#    #+#             */
-/*   Updated: 2026/03/09 15:21:28 by ldesboui         ###   ########.fr       */
+/*   Updated: 2026/03/10 13:41:13 by ldesboui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "Fixed.hpp"
@@ -48,22 +48,22 @@ Fixed &Fixed::operator=(const Fixed& aFixed)
 	return (*this);
 }
 
-Fixed Fixed::operator+(const Fixed& aFixed)
+Fixed Fixed::operator+(const Fixed& aFixed) const
 {
 	return (Fixed(toFloat() + aFixed.toFloat()));
 }
 
-Fixed Fixed::operator-(const Fixed& aFixed)
+Fixed Fixed::operator-(const Fixed& aFixed) const
 {
 	return (Fixed(toFloat() - aFixed.toFloat()));
 }
 
-Fixed Fixed::operator/(const Fixed& aFixed)
+Fixed Fixed::operator/(const Fixed& aFixed) const
 {
 	return (Fixed(toFloat() / aFixed.toFloat()));
 }
 
-Fixed Fixed::operator*(const Fixed& aFixed)
+Fixed Fixed::operator*(const Fixed& aFixed ) const
 {
 	return (Fixed(toFloat() * aFixed.toFloat()));
 }

@@ -6,7 +6,7 @@
 /*   By: ldesboui <ldesboui@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/06 13:36:45 by ldesboui          #+#    #+#             */
-/*   Updated: 2026/03/09 15:16:28 by ldesboui         ###   ########.fr       */
+/*   Updated: 2026/03/10 13:40:47 by ldesboui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #pragma once
@@ -29,10 +29,10 @@ public:
 	bool			operator<=(const Fixed& aFixed) const;
 	bool			operator==(const Fixed& aFixed) const;
 	bool			operator!=(const Fixed& aFixed) const;
-	Fixed			operator+(const Fixed& aFixed);
-	Fixed			operator*(const Fixed& aFixed);
-	Fixed			operator-(const Fixed& aFixed);
-	Fixed			operator/(const Fixed& aFixed);
+	Fixed			operator+(const Fixed& aFixed) const;
+	Fixed			operator*(const Fixed& aFixed) const;
+	Fixed			operator-(const Fixed& aFixed) const;
+	Fixed			operator/(const Fixed& aFixed) const;
 	Fixed			&operator++( void );
 	Fixed			&operator--( void );
 	Fixed			operator++( int );
